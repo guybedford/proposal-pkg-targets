@@ -75,6 +75,8 @@ The targets proposal as provided here is designed to be fully compatible with su
 
 ### Target Maps
 
+The support for targets is extended beyond entry points to also support the [Node.js package exports proposal](https://nodejs.org/dist/latest-v12.x/docs/api/esm.html#esm_package_exports).
+
 Given the definition of targets and the ability for a resolver to detect targets in a priority order, we extend the support for targets from the entry point to the package.json `"exports"`
 by allowing an `"exports"` target to map into an object:
 
