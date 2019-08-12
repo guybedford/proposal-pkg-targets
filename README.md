@@ -43,9 +43,9 @@ The initial proposed list of targets is the following:
 * _dev_: Any environment which can be considered to be running in development mode.
 * _production_: Any environment which can be considered to be running in production mode.
 
-_Anyone can define a target name in their tool or workflow._ If users wish to try and get consensus for a target between tools and environments, 
+_Anyone can define a target name in their tool or workflow._
 
-The goal here is for targets and their meanings are defined by consensus between tools, and for those meanings to be located at a central place where they can be registered by anyone.
+If, on the other hand, users wish to try and get consensus for a target definition between tools and environments, the spec can provide a simple process for anyone to register a target definition to avoid any possible conflicts of meaning, but this process is entirely optional, and should have strong checks in place to ensure definition quality.
 
 ### Target Definitions
 
