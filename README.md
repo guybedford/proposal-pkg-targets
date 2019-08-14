@@ -1,5 +1,7 @@
 # Package Targets Proposal
 
+_Contributors: Jan Krems, Guy Bedford_
+
 Different JS runtimes and tools tend to follow their own rules on how to resolve the main entry point of a JavaScript package through the `package.json`.
 
 For example, depending on the tool or runtime you might load the entry point as - `"main"`, `"browser"`, `"react-native"`, `"electron"`, `"module"`, to name a few.
