@@ -42,7 +42,7 @@ The initial proposed list of targets is the following:
 * _browser_: A browser environment, defined by the presence of the `document` global.
 * _electron_: Electron, as defined by the runtime of the Electron project, or any fork of it.
 * _react-native_: React Native, as defined by the runtime of the React Native project, or any fork of it.
-* _dev_: Any environment which can be considered to be running in development mode.
+* _development_: Any environment which can be considered to be running in development mode.
 * _production_: Any environment which can be considered to be running in production mode.
 
 _Anyone can define a target name in their tool or workflow._
@@ -119,7 +119,7 @@ In addition, targets can compose through nesting:
   "exports": {
     "./features/": [{
       "browser": {
-        "dev": "./features-browser-dev/",
+        "development": "./features-browser-dev/",
         "production": "./features-browser-production/"
       }
     }, "./features/"]
