@@ -1,6 +1,6 @@
 # Package Targets Proposal
 
-_Contributors: Jan Krems, Guy Bedford_
+_Contributors: Jan Krems, Guy Bedford, Jamie Kyle_
 
 Different JS runtimes and tools tend to follow their own rules on how to resolve the main entry point of a JavaScript package through the `package.json`.
 
