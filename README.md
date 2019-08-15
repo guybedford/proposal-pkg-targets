@@ -39,7 +39,7 @@ It is up to the resolver of the runtime, tool or environment to decide which tar
 The initial proposed list of targets is the following:
 
 * _main_: The default fallback target for any environment.
-* _browser_: A browser environment, defined by the presence of the `document` global.
+* _browser_: A web browser environment, that is not also a Node.js environment (eg Electron does not follow the browser field).
 * _electron_: Electron, as defined by the runtime of the Electron project, or any fork of it.
 * _react-native_: React Native, as defined by the runtime of the React Native project, or any fork of it.
 * _development_: Any environment which can be considered to be running in development mode.
