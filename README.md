@@ -128,3 +128,40 @@ In addition, targets can compose through nesting:
 ```
 
 allowing splitting of `pkg/features/x.js` resolution between browser production and browser development environments.
+
+#### Not Found Target
+
+In addition to string targets it is also possible to define a not found target which indicates that there should be no mapping for the given module:
+
+```js
+{
+  "browser": false,
+  "exports": {
+    "./": { browser: false }
+  }
+}
+```
+
+The above implies that a _Module Not Found_ error should be thrown when attempting to resolve the given resolutions for the browser.
+
+### Full Type Definitions
+
+Combining all of the above, the proposal types can be defined as (in TypeScript):
+
+```typescript
+type TargetValue = string | false | TargetMap | TargetArray;
+interface TargetMap {
+  [conditional: string]: TargetValue;
+};
+interface TargetArray extends Array<TargetValue> {};
+```
+
+where the individual targets are defined as type `TargetValue`, and the _exports_ field is defined as a map of target values:
+
+```typescript
+type PackageExports = string | false | {
+  [key: string]: TargetValue
+};
+```
+
+
