@@ -135,9 +135,9 @@ In addition to string targets it is also possible to define a not found target w
 
 ```js
 {
-  "browser": false,
+  "browser": null,
   "exports": {
-    "./": { browser: false }
+    "./": { browser: null }
   }
 }
 ```
@@ -149,7 +149,7 @@ The above implies that a _Module Not Found_ error should be thrown when attempti
 Combining all of the above, the proposal types can be defined as (in TypeScript):
 
 ```typescript
-type TargetValue = string | false | TargetMap | TargetArray;
+type TargetValue = string | null | TargetMap | TargetArray;
 interface TargetMap {
   [conditional: string]: TargetValue;
 };
@@ -163,5 +163,6 @@ type PackageExports = string | false | {
   [key: string]: TargetValue
 };
 ```
+
 
 
