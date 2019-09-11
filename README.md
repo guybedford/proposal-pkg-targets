@@ -137,7 +137,7 @@ In addition to string targets it is also possible to define a not found target w
 {
   "browser": null,
   "exports": {
-    "./": { browser: null }
+    "./": { "browser": null }
   }
 }
 ```
